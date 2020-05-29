@@ -1,3 +1,4 @@
+//median of a sorted array
 #include<stdio.h>
 void main() {
 	int temp,i,j,m,n,a[10],b[10],r,merge[20];
@@ -5,6 +6,7 @@ void main() {
 	printf("Enter m and n values : ");
 	scanf("%d%d",&m,&n);
 	printf("enter a elements : ");
+	//merging the arrays and reading the elements
 	for(i=0;i<m;i++) {
 			scanf("%d",&a[i]);
 			merge[i]=a[i];
@@ -21,6 +23,7 @@ void main() {
 	for(i=0;i<m+n;i++) {
 		printf("%d \n",merge[i]);
 	}
+	//Sorting the merged array
 	printf("After sorting \n");
 	r=m+n;
 	for(i=0;i<r;i++) {
@@ -33,6 +36,7 @@ void main() {
 		}
 		printf("%d ",merge[i]);
 	}
+	//Finding the median of the sorted array
 	if(r%2==0) {
 		 median=(merge[(r-2)/2]+merge[r/2])/2.0;
 	     printf("median is : %f",median);
