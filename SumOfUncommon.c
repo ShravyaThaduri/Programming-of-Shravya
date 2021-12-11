@@ -1,3 +1,4 @@
+//c code to find uncommon elements from two arrays and sum of uncommon elements
 #include<stdio.h>
 int main()  {
 	int n,a1[10],a2[10],i,c[10],j,flag=0,sum=0;
